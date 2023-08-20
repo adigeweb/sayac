@@ -27,13 +27,13 @@ window.addEventListener("load", () => {
         }
     }
     document.querySelector(".lang.tr").addEventListener("click", () => {
-        location.href = "/?lang=tr";
+        location.href = "/sayac/?lang=tr";
     });
     document.querySelector(".lang.en").addEventListener("click", () => {
-        location.href = "/?lang=en";
+        location.href = "/sayac/?lang=en";
     });
     document.querySelector(".lang.de").addEventListener("click", () => {
-        location.href = "/?lang=de";
+        location.href = "/sayac/?lang=de";
     });
     if (["tr", "en", "de"].includes(srcParams.get("lang"))) {
         document.querySelector(`.lang.${srcParams.get("lang")}`).style.border = "2px solid orange";
@@ -69,13 +69,13 @@ document.querySelector("button#ok").addEventListener("click", () => {
     }
     else {
         if (window.lang == "tr") {
-            message(`Başarılı! Sayacınız <a href=\"/page/?s=${starting}&e=${ending}&t=${title}\">burada</a>!`, "limegreen", 0);
+            message(`Başarılı! Sayacınız <a href=\"/sayac/page/?s=${starting}&e=${ending}&t=${title}\">burada</a>!`, "limegreen", 0);
         }
         else if (window.lang == "de") {
-            message(`Erfolgreich! Ihr Zähler <a href=\"/page/?s=${starting}&e=${ending}&t=${title}\">hier</a>!`, "limegreen", 0);
+            message(`Erfolgreich! Ihr Zähler <a href=\"/sayac/page/?s=${starting}&e=${ending}&t=${title}\">hier</a>!`, "limegreen", 0);
         }
         else {
-            message(`Success! <a href=\"/page/?s=${starting}&e=${ending}&t=${title}\">Here's</a> your timer!`, "limegreen", 0)
+            message(`Success! <a href=\"/sayac/page/?s=${starting}&e=${ending}&t=${title}\">Here's</a> your timer!`, "limegreen", 0)
         }
     }
 });
