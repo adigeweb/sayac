@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    background: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(white 20%, lightgray 20%, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#timer {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .7em;
+    letter-spacing: 5px;
+    margin-top: 5%;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    display: inline-block;
+    padding: 20px;
+    width: 100px;
+    border-radius: 5px;
+    color: white;
+    background: orange;
+}
+
+.numbers {
+    color: white;
+    font-size: 4em;
+}
+
+.circle {
+    height: 10rem;
+    width: 10rem;
+    background: conic-gradient(black 50%, orange 50%);
+    border: 2px solid orange;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
+}
+
+.loading {
+    background: black;
+    position: absolute;
+    top: 0; right: 0; left: 0; bottom: 0;
+}
+
+.loading .index {
+    height: 10rem;
+    width: 10rem;
+    border: 30px solid orange;
+    border-top: 30px solid white;
+    border-radius: 50%;
+    animation: loader 2s linear infinite;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes loader {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}

@@ -1,0 +1,116 @@
+body {
+    text-align: center;
+    background: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dates p {
+    color: white;
+}
+
+input[type=date] {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button#ok {
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background: white;
+    color: black;
+    border: none;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 5px;
+}
+
+button#ok:hover {
+    scale: 1.02;
+    color: orange;
+    transition: .3s;
+}
+
+button#ok:active {
+    background: gray;
+}
+
+fieldset {
+    border: 3px solid white;
+}
+
+fieldset legend {
+    background: linear-gradient(white 20%, lightgray 20%, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+span.error {
+    color: red;
+    font-weight: bold;
+    opacity: 0;
+    margin-top: 4rem;
+    transition: .2s;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+    transition: .2s;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input#title {
+    color: white;
+    height: 2rem;
+    width: 20%;
+    background: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.lang {
+    margin-top: 2rem;
+    height: 2rem;
+    width: 3rem;
+    border: 2px solid white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.langchoose {
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+}
+
+.langchoose .lang:nth-child(1) {
+    background: url("https://avatars.mds.yandex.net/get-entity_search/5535095/551818052/S168xU_2x");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.langchoose .lang:nth-child(2) {
+    background: url("https://www.logisticanews.it/files/2016/06/uk-flag-1444045.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.langchoose .lang:nth-child(3) {
+    background: url("https://avatars.mds.yandex.net/i?id=873bd6c0c12d342810b8e5a5add631c09faa120c-9150622-images-thumbs&n=13");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
