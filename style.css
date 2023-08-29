@@ -71,7 +71,7 @@ a:hover {
 input#title {
     color: white;
     height: 2rem;
-    width: 7rem;
+    width: 50%;
     background: black;
     border: 2px solid white;
     border-radius: 5px;
